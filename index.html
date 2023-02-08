@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="position-contents">
+      <section style="display: flex">
+        <div style="display: flex">
+          <div id="storageLabel"><p>Storage:0</p></div>
+          <input
+            type="range"
+            id="storage"
+            class="storage"
+            value="0"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+
+        <div style="display: flex">
+          <div id="transferLabel"><p>Transfer:0</p></div>
+          <input
+            class="transfer"
+            type="range"
+            value="0"
+            min="0"
+            max="1000"
+            step="1"
+          />
+        </div>
+      </section>
+      <section class="graph"><div id="graph"></div></section>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+ul {
+  display: block;
+  list-style: none;
+  transform: rotate(-90deg);
+}
+button {
+  border: none;
+  font-size: 8px;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+button:hover {
+  color: aqua;
+}
+li {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  position: relative;
+}
+
+.backblaze {
+  background-color: gray;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.bunny {
+  background-color: gray;
+  height: 10px;
+  margin-right: 10px;
+}
+.scaleway {
+  background-color: gray;
+  height: 10px;
+  margin-right: 10px;
+}
+.vultr {
+  background-color: gray;
+  height: 10px;
+  margin-right: 10px;
+}
+.before {
+  font-size: 12px;
+  width: 20px;
+  margin-right: 70px;
+}
+.scalewaySingle {
+  position: absolute;
+
+  bottom: 10%;
+}
+.scalewayMulti {
+  position: absolute;
+
+  bottom: 10%;
+  left: 40px;
+}
+.bunnyButtonSsd {
+  position: absolute;
+  bottom: 10%;
+  left: 40px;
+}
+.bunnyButtonHdd {
+  position: absolute;
+  bottom: 10%;
+}
+.chip {
+  background-color: red;
+}
+.position-contents {
+  display: flex;
+  flex-direction: column-reverse;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+@media screen and (max-width: 767px) {
+  .graph {
+    margin-top: 40px;
+
+    padding: 20px;
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .position-contents {
+    margin: 0 auto;
+
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    max-width: 1200px;
+  }
+  .graph {
+    margin-bottom: 0;
+  }
+  ul {
+    transform: rotate(0);
+  }
+}
