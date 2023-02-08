@@ -224,33 +224,33 @@ function renderCost(typeHardDisk = "Hdd", subscription = "single") {
 //
 function compareCost(backblaze, bunnyCost, scalewayCost, vultrCost) {
   if (
-    backblaze > bunnyCost &&
-    backblaze > scalewayCost &&
-    backblaze > vultrCost
+    backblaze < bunnyCost &&
+    backblaze < scalewayCost &&
+    backblaze < vultrCost
   ) {
     const backblaze = document.querySelector(".backblaze");
     backblaze.classList.add("chip");
   }
   if (
-    bunnyCost > backblaze &&
-    bunnyCost > scalewayCost &&
-    bunnyCost > vultrCost
+    bunnyCost < backblaze &&
+    bunnyCost < scalewayCost &&
+    bunnyCost < vultrCost
   ) {
     const bunny = document.querySelector(".bunny");
     bunny.classList.add("chip");
   }
   if (
-    scalewayCost > backblaze &&
-    scalewayCost > bunnyCost &&
-    scalewayCost > vultrCost
+    scalewayCost < backblaze &&
+    scalewayCost < bunnyCost &&
+    scalewayCost < vultrCost
   ) {
     const scaleway = document.querySelector(".scaleway");
     scaleway.classList.add("chip");
   }
   if (
-    vultrCost > backblaze &&
-    vultrCost > bunnyCost &&
-    vultrCost > scalewayCost
+    vultrCost < backblaze &&
+    vultrCost < bunnyCost &&
+    vultrCost < scalewayCost
   ) {
     const vultr = document.querySelector(".vultr");
     vultr.classList.add("chip");
