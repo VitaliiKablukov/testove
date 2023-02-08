@@ -79,6 +79,7 @@ li {
 
 @media screen and (max-width: 767px) {
   .graph {
+    margin: 0 auto;
     margin-top: 40px;
 
     padding: 20px;
